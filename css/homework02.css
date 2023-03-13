@@ -1,0 +1,764 @@
+/* topBanner */
+
+.topBanner {
+    position: relative;
+    background: #f9f9f9;
+}
+
+.topBanner.on {
+    height: 0;
+    padding: 0 0;
+    overflow: hidden;
+}
+
+.topBanner .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.topBanner .inner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.topBanner .inner a {
+    border: 1px solid #444;
+    padding: 0 10px;
+    margin: 0 0 0 100px;
+}
+
+.topBanner .inner i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+}
+
+
+
+
+/* header */
+
+
+
+
+.header h1 {
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.header .inner {
+    z-index: 1999;
+    display: flex;
+    width: 100%;
+    line-height: 100px;
+    background: #fff;
+}
+
+.header .gnb>ul {
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.header .gnb>ul li {
+    position: relative;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.header .gnb>ul li>ul {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    border-left: 1px solid #444;
+    opacity: 0;
+    height: 250px;
+    visibility: hidden;
+    background: #f9f9f9;
+}
+
+.header .gnb>ul:hover ul {
+    visibility: unset;
+    opacity: 1;
+    transform: translate(-50%, 0);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.header .gnb>ul li>ul li {
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.header div {
+    width: 100px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* MainVisual mainSlide */
+
+
+
+
+
+.mainVisual .mainSlide figure {
+    height: 700px;
+}
+
+.mainVisual .mainSlide .inner {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.mainVisual .mainSlide .item01 .inner h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 100px 0 20px 0;
+    color: #fff;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item01 .inner p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #fff;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item02 .inner h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 100px 0 20px 0;
+    color: #fff;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item02 .inner p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #fff;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item03 .inner h2 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 100px 0 20px 750px;
+    color: #444;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item03 .inner p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0 0 0 750px;
+    color: #444;
+    text-shadow: 0 0 1px;
+}
+
+.mainVisual .mainSlide .item01 {
+    background: url(../img/work01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .item02 {
+    background: url(../img/work02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .item03 {
+    background: url(../img/work03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide {
+    position: relative;
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-shadow: 0 0 3px;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 70px;
+    height: 70px;
+
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 100px;
+    height: 4px;
+    margin: 0 5px 0 0;
+    cursor: pointer;
+    border-radius: 2px;
+    background: tomato;
+}
+
+.mainVisual .mainSlide .slick-dots>li>button {
+    display: none;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #444;
+}
+
+
+
+
+
+/* mainContents */
+
+
+
+
+.mainContents {
+    padding: 100px 0;
+}
+
+.mainContents .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContents .inner h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+.mainContents h2 .main_left {
+    padding: 5px 20px;
+    background: url(../img/edge_left_8.png) 5px 5px no-repeat;
+}
+
+.mainContents h2 .main_right {
+    padding: 5px 20px;
+    background: url(../img/edge_right_8.png) 5px 5px no-repeat;
+}
+
+.mainContents .inner p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+
+.mainContents .inner ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainContents .inner ul li {
+    padding: 0 35px;
+}
+
+.mainContents a span {
+    font-size: 20px;
+
+}
+
+.mainContents i {
+    position: relative;
+    display: block;
+    width: 125px;
+    height: 125px;
+
+    background: #edeef0;
+    border-radius: 50%;
+
+    margin: 0 0 15px 0;
+}
+
+.mainContents i::before {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    content: "";
+    background: url(../img/ico_cnt.png) no-repeat center center/cover;
+    width: 110px;
+    height: 110px;
+}
+
+.mainContents i.main_Con01::before {
+    background-position: 0 0;
+}
+
+.mainContents i.main_Con02::before {
+    background-position: -110px 0;
+}
+
+.mainContents i.main_Con03::before {
+    background-position: -220px 0;
+}
+
+.mainContents i.main_Con04::before {
+    background-position: -330px 0;
+}
+
+
+
+
+
+
+
+
+
+/* subContents */
+
+
+
+
+
+.subContents {
+    padding: 100px 0;
+    background: #e0e0e0;
+}
+
+.subContents h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+    text-align: center;
+    color: #333;
+}
+
+.subContents h2 .sub_left {
+    padding: 10px 20px;
+    background: url(../img/edge_left_8.png) 5px 5px no-repeat;
+}
+
+.subContents h2 .sub_right {
+    padding: 10px 20px;
+    background: url(../img/edge_right_8.png) 5px 5px no-repeat;
+}
+
+.subContents .inner {
+    position: relative;
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.subContents .inner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.subContents .inner .slick-next {
+    background: url(../img/sub_next.png) no-repeat center center/cover;
+    margin: 0 0 0 650px;
+}
+
+.subContents .inner .slick-prev {
+    background: url(../img/sub_prev.png) no-repeat center center/cover;
+    margin: 0 0 0 -650px;
+}
+
+.subContents figure {
+    background: #fff;
+    margin: 0 15px;
+}
+
+.subContents h3 {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px 15px;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.subContents p {
+    font-size: 14px;
+    font-weight: 300;
+    height: 70px;
+    line-height: 1.7em;
+    margin: 0 0 15px 0;
+    padding: 0 10px 20px 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+/* mainNav */
+
+
+
+
+.mainNav {
+    padding: 100px 0;
+}
+
+.mainNav .tit {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainNav .tit h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 20px 50px;
+    color: #333;
+}
+
+.mainNav .tit p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 40px 50px;
+}
+
+.mainNav .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainNav .inner .tap {
+    display: flex;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+}
+
+.mainNav .inner .tap li {
+    float: left;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+.mainNav .inner .tap li.on {
+    border: 1px solid #444;
+}
+
+.mainNav .inner .tap li a {
+    display: block;
+    line-height: 2.5;
+    background: #f9f9f9;
+}
+
+.mainNav .inner .con01 {
+    display: none;
+    width: 1200px;
+    min-height: 530px;
+    margin: 0 0 40px 0;
+    padding: 20px 15px;
+    background: #c7c5c5;
+}
+
+.mainNav .inner .con01.on {
+    display: block;
+}
+
+.mainNav .inner .con01 .tit {
+    display: inline;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.mainNav .inner .con01 .tapItem {
+    display: flex;
+}
+
+.mainNav .tapItem .left {
+    width: 70%;
+}
+
+.mainNav .tapItem .right {
+    width: 28%;
+    background: #fff;
+}
+
+.mainNav .tapItem .right ul {
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+}
+
+.mainNav .tapItem .right ul li {
+    position: relative;
+    margin: 20px 0;
+    min-height: 75px;
+}
+
+.mainNav .tapItem .right ul li figure {
+    width: 90px;
+    position: absolute;
+    left: 0;
+}
+
+.mainNav .tapItem .right ul li p {
+    margin: 0 0 15px 100px;
+}
+
+.mainNav .tapItem .right strong {
+    display: block;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.mainNav .tapItem .right span {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.mainNav .btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.mainNav .btns a {
+    padding: 10px 6px;
+    color: #fff;
+}
+
+.mainNav .btns .btnl {
+    padding: 15px 40px;
+    background: #134ea0;
+}
+
+.mainNav .btns .btnr {
+    padding: 15px 40px;
+    background: #31363e;
+}
+
+
+
+
+/* tap02 */
+
+
+
+
+
+
+
+.mainNav .inner .con02 {
+    display: none;
+    width: 1200px;
+    min-height: 530px;
+    margin: 0 0 40px 0;
+    padding: 20px 15px;
+    background: #c7c5c5;
+}
+
+.mainNav .inner .con02.on {
+    display: block;
+}
+
+.mainNav .inner .con02 .tapItem02 {
+    display: flex;
+}
+
+.mainNav .tapItem02 .left {
+    width: 70%;
+    margin: 15px 0 0 30px;
+}
+
+.mainNav .tapItem02 .right {
+
+    margin: 15px 30px 0 0;
+    padding: 50px 0;
+    width: 28%;
+    background: #fff;
+}
+
+.mainNav .tapItem02 .right ul {
+    margin: 30px 0 30px 80px;
+}
+
+.mainNav .tapItem02 .right ul li {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 5px 0;
+}
+
+
+
+/* tap03 */
+
+
+
+.mainNav .inner .con03 {
+    display: none;
+    width: 1200px;
+    min-height: 530px;
+    margin: 0 0 40px 0;
+    padding: 20px 15px;
+    background: #c7c5c5;
+}
+
+.mainNav .inner .con03.on {
+    display: block;
+}
+
+.mainNav .inner .con03 .tapItem03 {
+    display: flex;
+}
+
+.mainNav .tapItem03 .left {
+    width: 50%;
+    margin: 15px 0 0 30px;
+}
+
+.mainNav .tapItem03 .right {
+    width: 40%;
+    margin: 15px 0 0 100px;
+    padding: 50px 0;
+    background: #fff;
+}
+
+.mainNav .tapItem03 .right ul {
+    margin: 50px;
+}
+
+.mainNav .tapItem03 .right ul li {
+    position: relative;
+    margin: 0 0 40px 100px;
+}
+
+.mainNav .tapItem03 .right strong {
+    position: absolute;
+    top: 10%;
+    width: 90px;
+    left: -100px;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    background: #134ea0;
+    color: #fff;
+    text-align: center;
+}
+
+.mainNav .tapItem03 .right span {
+    text-align: center;
+    line-height: 25px;
+}
+
+.mainNav .tapItem03 .right div {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #333;
+}
+
+
+
+
+/* footer */
+
+
+.footer {
+    background: #2d3032;
+    padding: 40px 0 50px 0;
+}
+
+.footer .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .inner p {
+    float: left;
+    margin: 0 20px 0 0;
+    padding: 0 10px 10px 10px;
+}
+
+.footer .inner .ads {
+    float: left;
+    margin: 0 10px 10px 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px
+}
+
+.footer .inner .fright {
+    float: right;
+    color: #fff;
+}
+
+.footer .fright .btn {
+    font-size: 0;
+}
+
+.footer .f_link {
+    position: relative;
+    width: 100%;
+    clear: both;
+    color: #fff;
+}
+
+.footer .f_link ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer .f_link ul li {
+    background: #3c3f41;
+    padding: 5px 10px;
+}
+
+.footer .f_link .f_img {
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
