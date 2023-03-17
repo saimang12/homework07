@@ -1,0 +1,1563 @@
+* {
+    outline: 1px solid tomat;
+}
+
+.btn_o {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.Wrap {
+    background-color: #3b404c;
+    color: #ddd;
+}
+
+
+/* right_tap */
+
+
+
+.right_tap {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background: #333;
+    z-index: 1999;
+    transition: 0.5s;
+}
+
+.right_tap.on {
+    right: 0;
+}
+
+.right_tap .close_box {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.right_tap i {
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.right_tap i:hover {
+    color: #fff;
+}
+
+.right_tap figure {
+    padding: 60px 30px 30px 30px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 30px 0;
+}
+
+
+.right_tap figure img {
+    width: 200px;
+    height: 90px;
+}
+
+.right_tap ul {
+    text-align: center;
+    font-size: 14px;
+}
+
+.right_tap ul li {
+    line-height: 26px;
+}
+
+.right_tap ul li:hover {
+    color: #fff;
+}
+
+.right_tap ul li:first-child {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* header */
+
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: #3b404c;
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+
+    z-index: 999;
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .inner h1 img {
+    width: 190px;
+    height: 80px;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .gnb>ul>li {
+    font-size: 18px;
+}
+
+.header .gnb>ul>li>a {
+    display: block;
+}
+
+.header .gnb>ul>li>a:hover {
+    color: #fff;
+}
+
+.header .inner .h_icon i {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header .inner .h_icon i:hover {
+    color: #fff;
+}
+
+/* header media */
+
+@media(max-width:768px) {
+
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .header .inner {
+        width: auto;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header .inner h1 {
+        width: auto;
+    }
+
+    .header .inner h1 img {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .header .gnb {
+        position: absolute;
+        width: 100%;
+        top: 101px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        line-height: 50px;
+        background-color: #3b404c;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header .gnb>ul {
+        width: auto;
+        justify-content: center;
+    }
+
+    .header .gnb>ul>li {
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .header .inner .h_icon i {
+        font-size: 5vw;
+        margin: 0 15px 0 0;
+    }
+}
+
+
+
+/* mainVisual */
+
+.mainVisual {
+    position: relative;
+    padding: 200px 0 42px 0;
+}
+
+.mainVisual .inner {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.mainVisual .inner iframe {
+    transform: translate(0, -58px);
+}
+
+
+/* mainVisual media */
+
+
+@media (max-width:768px) {
+    .mainVisual {
+        padding: 200px 15px 42px 15px;
+    }
+
+    .mainVisual .inner {
+        width: auto;
+    }
+}
+
+
+
+/* mainInfo */
+
+
+
+
+.mainInfo {
+    position: relative;
+    padding: 100px 0;
+    background: #252c2c;
+}
+
+.mainInfo h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+}
+
+.mainInfo .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    background-color: #3b404c;
+}
+
+.mainInfo .inner>div {
+    flex: 1;
+    padding: 30px;
+}
+
+.mainInfo .inner .right {
+    background-color: #232936;
+}
+
+.mainInfo .inner .right p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 0 100px 0;
+    word-break: keep-all;
+}
+
+.mainInfo .inner .right span {
+    display: block;
+    margin: 0 30px 0 0;
+    text-align: right;
+}
+
+.mainInfo .inner .right span a {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+}
+
+.mainInfo .inner .right span a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* mainInfo media */
+
+
+@media (max-width:768px) {
+    .mainInfo {
+        position: relative;
+        background: #252c2c;
+    }
+
+    .mainInfo h2 {
+        font-size: 6vw;
+    }
+
+    .mainInfo .inner {
+        width: auto;
+        margin: 0 15px;
+        display: flex;
+        flex-direction: column;
+        background-color: #3b404c;
+    }
+
+    .mainInfo .inner .right p {
+        text-align: center;
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+/* mainContent */
+
+
+
+
+.mainContent {
+    padding: 100px 0;
+    background-color: #3b404c;
+}
+
+.mainContent .inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+
+}
+
+.mainContent .tit {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.mainContent .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.mainContent .tit h2 em {
+    font-style: italic;
+}
+
+.mainContent .tit p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.mainContent figure {
+    flex: 1;
+
+}
+
+.mainContent .itm {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.mainContent .itm01 img {
+    height: 270px;
+}
+
+.mainContent .itm02 img {
+    height: 100%;
+    margin: -160px 0 0 0;
+}
+
+.mainContent .itm03 img {
+    height: 100%;
+    margin: -160px 0 0 0;
+}
+
+.mainContent figure .desc {
+    padding: 30px 20px;
+    background: rgb(49, 44, 44);
+    word-break: keep-all;
+}
+
+.mainContent figure .desc span {
+    display: block;
+    font-size: 18px;
+    margin: 0 0 15px 0;
+}
+
+.mainContent figure .desc h3 {
+    font-size: 25px;
+    margin: 0 0 40px 0;
+}
+
+.mainContent figure .desc p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* mainContent media */
+
+
+@media (max-width:768px) {
+    .mainContent {
+        margin: 0 15px;
+    }
+
+    .mainContent .inner {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainContent .tit h2 {
+        font-size: 6vw;
+        font-weight: 700;
+        margin: 0 0 15px 0;
+    }
+
+
+
+    .mainContent .tit p {
+        font-size: 3vw;
+    }
+
+    .mainContent figure {
+        flex: 1;
+        text-align: center;
+    }
+
+    .mainContent .itm {
+        max-height: 100%;
+    }
+
+    .mainContent .itm01 img {
+        height: 100%;
+    }
+
+    .mainContent .itm02 img {
+        height: 100%;
+    }
+
+    .mainContent .itm03 img {
+        height: 100%;
+    }
+
+    .mainContent figure .desc span {
+        font-size: 3vw;
+    }
+
+    .mainContent figure .desc h3 {
+        font-size: 4vw;
+        margin: 0 0 20px 0;
+    }
+
+    .mainContent figure .desc p {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+}
+
+
+
+
+
+/* subVisual */
+
+
+
+
+.subVisual {
+    background: #252c2c;
+}
+
+.subVisual .inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.subVisual .inner .slides {
+    position: relative;
+    height: 95vh;
+}
+
+.subVisual .inner .slides::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.subVisual .tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    text-shadow: 0 0 1px #000;
+    color: #fff;
+}
+
+.subVisual .tit h2 {
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    line-height: 90px;
+}
+
+.subVisual .tit p {
+    position: relative;
+    font-size: 20px;
+    padding: 25px 0 0 0;
+    margin: 0 0 40px 0;
+}
+
+
+
+.subVisual .tit p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 30px;
+    height: 3px;
+    background: #fff
+}
+
+.subVisual .tit span {
+    display: inline-block;
+    padding: 10px 30px 12px 30px;
+    background: #333;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+
+
+    .subVisual .inner .slides {
+        position: relative;
+        height: 65vh;
+    }
+
+    .subVisual .tit {
+        display: flex;
+        word-break: keep-all;
+        top: 20px;
+        gap: 10vw;
+        transform: translate(-50%, 0);
+    }
+
+    .subVisual .tit h2 {
+        font-size: 4vw;
+        font-weight: 700;
+        margin: -4px 0 20px 0;
+        line-height: 1.5;
+    }
+
+    .subVisual .tit p {
+        position: relative;
+        font-size: 3vw;
+        padding: 0 0 0 0;
+        margin: 0 0 40px 0;
+        line-height: 1.5;
+    }
+
+    .subVisual .tit p::before {
+        display: none;
+    }
+
+    .subVisual .tit span {
+        font-size: 3vw;
+        padding: 10px 30px 12px 30px;
+        color: #fff;
+        border-radius: 16px;
+        font-weight: 500;
+    }
+
+}
+
+.subVisual .inner .arrows {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+}
+
+.subVisual .slide_dots {
+    margin: 0 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.subVisual .slide_dots li {
+    vertical-align: middle;
+    align-items: center;
+}
+
+.subVisual .slide_dots li button {
+    font-size: 0;
+    padding: 10px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.subVisual .slide_dots li.on button {
+    background: tomato;
+}
+
+.subVisual .inner .arrows i {
+    font-size: 30px;
+}
+
+
+
+.subVisual .inner .slide01 {
+    background: url(../img06/sub_slide01.jpg) no-repeat center center/cover;
+}
+
+.subVisual .inner .slide02 {
+    background: url(../img06/sub_slide02.jpg) no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 눈 내리는 효과 */
+
+.snowflake {
+    width: 1vw;
+    height: 1vw;
+    background: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    top: -3vh;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate3d(var(--left-ini), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+
+.snowflake:nth-child(1) {
+    --size: 1vw;
+    --left-ini: -8vw;
+    --left-end: 3vw;
+    left: 21vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(2) {
+    --size: 0.6vw;
+    --left-ini: 2vw;
+    --left-end: 10vw;
+    left: 17vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(3) {
+    --size: 0.8vw;
+    --left-ini: -5vw;
+    --left-end: -7vw;
+    left: 78vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -1s;
+}
+
+.snowflake:nth-child(4) {
+    --size: 0.2vw;
+    --left-ini: -1vw;
+    --left-end: -9vw;
+    left: 57vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(5) {
+    --size: 0.2vw;
+    --left-ini: 9vw;
+    --left-end: -1vw;
+    left: 39vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(6) {
+    --size: 0.8vw;
+    --left-ini: 3vw;
+    --left-end: -6vw;
+    left: 60vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -1s;
+}
+
+.snowflake:nth-child(7) {
+    --size: 1vw;
+    --left-ini: -1vw;
+    --left-end: -4vw;
+    left: 89vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -8s;
+}
+
+.snowflake:nth-child(8) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -7vw;
+    left: 33vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -2s;
+}
+
+.snowflake:nth-child(9) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -4vw;
+    left: 78vw;
+    animation: snowfall 10s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(10) {
+    --size: 0.6vw;
+    --left-ini: -3vw;
+    --left-end: 1vw;
+    left: 73vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -7s;
+}
+
+.snowflake:nth-child(11) {
+    --size: 0.4vw;
+    --left-ini: 6vw;
+    --left-end: -1vw;
+    left: 62vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -8s;
+}
+
+.snowflake:nth-child(12) {
+    --size: 0.4vw;
+    --left-ini: -1vw;
+    --left-end: 1vw;
+    left: 46vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(13) {
+    --size: 0.8vw;
+    --left-ini: 5vw;
+    --left-end: 0vw;
+    left: 28vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(14) {
+    --size: 0.8vw;
+    --left-ini: 0vw;
+    --left-end: -8vw;
+    left: 96vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(15) {
+    --size: 1vw;
+    --left-ini: 9vw;
+    --left-end: 4vw;
+    left: 48vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(16) {
+    --size: 0.6vw;
+    --left-ini: -2vw;
+    --left-end: 6vw;
+    left: 42vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(17) {
+    --size: 0.8vw;
+    --left-ini: -5vw;
+    --left-end: -5vw;
+    left: 11vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -4s;
+}
+
+.snowflake:nth-child(18) {
+    --size: 1vw;
+    --left-ini: -5vw;
+    --left-end: 2vw;
+    left: 21vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(19) {
+    --size: 0.6vw;
+    --left-ini: -6vw;
+    --left-end: 0vw;
+    left: 66vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(20) {
+    --size: 0.8vw;
+    --left-ini: 7vw;
+    --left-end: -5vw;
+    left: 20vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -4s;
+}
+
+.snowflake:nth-child(21) {
+    --size: 1vw;
+    --left-ini: 5vw;
+    --left-end: -9vw;
+    left: 50vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -2s;
+}
+
+.snowflake:nth-child(22) {
+    --size: 0.8vw;
+    --left-ini: 3vw;
+    --left-end: 5vw;
+    left: 16vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -8s;
+}
+
+.snowflake:nth-child(23) {
+    --size: 0.2vw;
+    --left-ini: -1vw;
+    --left-end: 5vw;
+    left: 89vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -2s;
+}
+
+.snowflake:nth-child(24) {
+    --size: 0.2vw;
+    --left-ini: -8vw;
+    --left-end: -9vw;
+    left: 36vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(25) {
+    --size: 0.2vw;
+    --left-ini: -6vw;
+    --left-end: 0vw;
+    left: 100vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(26) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: 3vw;
+    left: 72vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(27) {
+    --size: 0.8vw;
+    --left-ini: -1vw;
+    --left-end: 0vw;
+    left: 23vw;
+    animation: snowfall 14s linear infinite;
+    animation-delay: -1s;
+}
+
+.snowflake:nth-child(28) {
+    --size: 0.2vw;
+    --left-ini: 8vw;
+    --left-end: -5vw;
+    left: 37vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -5s;
+}
+
+.snowflake:nth-child(29) {
+    --size: 1vw;
+    --left-ini: 9vw;
+    --left-end: 8vw;
+    left: 61vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -1s;
+}
+
+.snowflake:nth-child(30) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -1vw;
+    left: 59vw;
+    animation: snowfall 11s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(31) {
+    --size: 1vw;
+    --left-ini: 2vw;
+    --left-end: -3vw;
+    left: 54vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -7s;
+}
+
+.snowflake:nth-child(32) {
+    --size: 1vw;
+    --left-ini: -4vw;
+    --left-end: -2vw;
+    left: 82vw;
+    animation: snowfall 6s linear infinite;
+    animation-delay: -6s;
+}
+
+.snowflake:nth-child(33) {
+    --size: 0.8vw;
+    --left-ini: 8vw;
+    --left-end: 4vw;
+    left: 16vw;
+    animation: snowfall 7s linear infinite;
+    animation-delay: -2s;
+}
+
+.snowflake:nth-child(34) {
+    --size: 0.8vw;
+    --left-ini: -8vw;
+    --left-end: -4vw;
+    left: 39vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(35) {
+    --size: 1vw;
+    --left-ini: -9vw;
+    --left-end: 6vw;
+    left: 40vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -1s;
+}
+
+.snowflake:nth-child(36) {
+    --size: 0.4vw;
+    --left-ini: -6vw;
+    --left-end: -6vw;
+    left: 36vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -7s;
+}
+
+.snowflake:nth-child(37) {
+    --size: 0.4vw;
+    --left-ini: -5vw;
+    --left-end: -6vw;
+    left: 90vw;
+    animation: snowfall 7s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(38) {
+    --size: 1vw;
+    --left-ini: -8vw;
+    --left-end: -8vw;
+    left: 9vw;
+    animation: snowfall 7s linear infinite;
+    animation-delay: -6s;
+}
+
+.snowflake:nth-child(39) {
+    --size: 0.6vw;
+    --left-ini: 5vw;
+    --left-end: 3vw;
+    left: 83vw;
+    animation: snowfall 7s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(40) {
+    --size: 0.6vw;
+    --left-ini: -2vw;
+    --left-end: 1vw;
+    left: 84vw;
+    animation: snowfall 9s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(41) {
+    --size: 0.6vw;
+    --left-ini: -1vw;
+    --left-end: -8vw;
+    left: 73vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(42) {
+    --size: 0.2vw;
+    --left-ini: -4vw;
+    --left-end: 3vw;
+    left: 19vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(43) {
+    --size: 0.4vw;
+    --left-ini: -2vw;
+    --left-end: 4vw;
+    left: 80vw;
+    animation: snowfall 13s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(44) {
+    --size: 0.8vw;
+    --left-ini: 6vw;
+    --left-end: -3vw;
+    left: 7vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(45) {
+    --size: 0.6vw;
+    --left-ini: -5vw;
+    --left-end: -7vw;
+    left: 60vw;
+    animation: snowfall 8s linear infinite;
+    animation-delay: -7s;
+}
+
+.snowflake:nth-child(46) {
+    --size: 0.2vw;
+    --left-ini: -4vw;
+    --left-end: -9vw;
+    left: 82vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -7s;
+}
+
+.snowflake:nth-child(47) {
+    --size: 0.2vw;
+    --left-ini: -4vw;
+    --left-end: -2vw;
+    left: 56vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -8s;
+}
+
+.snowflake:nth-child(48) {
+    --size: 0.6vw;
+    --left-ini: 8vw;
+    --left-end: -8vw;
+    left: 11vw;
+    animation: snowfall 15s linear infinite;
+    animation-delay: -10s;
+}
+
+.snowflake:nth-child(49) {
+    --size: 1vw;
+    --left-ini: 3vw;
+    --left-end: 8vw;
+    left: 24vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -9s;
+}
+
+.snowflake:nth-child(50) {
+    --size: 1vw;
+    --left-ini: 7vw;
+    --left-end: -8vw;
+    left: 69vw;
+    animation: snowfall 12s linear infinite;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(odd) {
+    filter: blur(3px);
+}
+
+.snowflake:nth-child(even) {
+    filter: blur(5px);
+}
+
+/* 눈 내리는 효과 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slideSection */
+
+
+
+
+
+.slideSection {
+    padding: 100px 0 0 0;
+
+}
+
+.slideSection .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.slideSection .inner h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 80px 0;
+}
+
+.slideSection .itm_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.slideSection .itm_box .sub_tit {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.slideSection .itm_box {
+    flex: 2 1;
+    margin: 0 -10px 100px -10px;
+    width: 50%;
+
+}
+
+.slideSection .itm_box:nth-child(odd) {
+    padding: 0 30px 0 0;
+}
+
+.slideSection .itm_box:nth-child(even) {
+    padding: 0 0 0 30px;
+}
+
+.slideSection .itm_box h3 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 40px;
+    margin: 0 0 40px 0;
+    background: #222;
+    border-radius: 40px;
+}
+
+.slideSection .itm_box p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.slideSection .slide_box {
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.slideSection .slide_box .slick-arrow {
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 8px);
+
+    font-size: 0;
+    background: none;
+    border: none;
+
+    width: 15px;
+    height: 15px;
+
+    border-top: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+
+    cursor: pointer;
+}
+
+.slideSection .slide_box .slick-arrow:hover {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+
+.slideSection .slide_box .slick-prev {
+    margin: 0 0 0 -50px;
+    transform: rotate(-135deg);
+}
+
+.slideSection .slide_box .slick-next {
+    margin: 0 0 0 50px;
+    transform: rotate(45deg);
+}
+
+.slideSection .slide_box .s_itms {
+    height: 200px;
+    margin: 0 10px;
+}
+
+.slideSection .itm_box .arrows {
+    position: relative;
+}
+
+.slideSection .itm_box .arrows .control_box {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 30px;
+}
+
+.slideSection .itm_box .arrows i {
+    font-size: 30px;
+}
+
+.slideSection .itm_box .arrows .slide_dots {
+    display: flex;
+    gap: 10px;
+}
+
+.slideSection .itm_box .arrows .slide_dots button {
+    font-size: 0;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+@media (max-width:768px) {
+
+    .slideSection .inner {
+        width: auto;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
+
+    .slideSection .itm_wrap {
+        display: unset;
+        flex-wrap: wrap;
+    }
+
+    .slideSection .itm_box h3 {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 40px;
+        margin: 0 0 40px 0;
+        background: #222;
+        border-radius: 40px;
+    }
+
+    .slideSection .itm_box p {
+        font-size: 3vw;
+        line-height: 1.5;
+    }
+
+    .slideSection .itm_box {
+        flex: 1;
+        margin: 0 0 150px 0;
+        width: auto;
+    }
+
+    .slideSection .itm_box:last-child {
+        margin: 0 0 100px 0;
+    }
+
+    .slideSection .slide_box .s_itms {
+        height: 200px;
+        margin: 0 15px;
+    }
+
+    .slideSection .itm_box:nth-child(odd) {
+        padding: 0 0 0 0;
+    }
+
+    .slideSection .itm_box:nth-child(even) {
+        padding: 0 0 0 0;
+    }
+}
+
+
+
+
+
+/* 1번 슬라이드 영역 */
+.slideSection .s_box01 .s_itm01 {
+    background: url(../img06/main_slide_img01-01.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box01 .s_itm02 {
+    background: url(../img06/main_slide_img01-02.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box01 .s_itm03 {
+    background: url(../img06/main_slide_img01-03.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box01 .s_itm04 {
+    background: url(../img06/main_slide_img01-04.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box01 .s_itm05 {
+    background: url(../img06/main_slide_img01-05.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box01 .s_itm06 {
+    background: url(../img06/main_slide_img01-06.jpg) no-repeat center center/cover;
+}
+
+
+
+
+
+/* 2번 슬라이드 영역 */
+.slideSection .s_box02 .s_itm01 {
+    background: url(../img06/main_slide_img02-01.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box02 .s_itm02 {
+    background: url(../img06/main_slide_img02-02.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box02 .s_itm03 {
+    background: url(../img06/main_slide_img02-03.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box02 .s_itm04 {
+    background: url(../img06/main_slide_img02-04.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box02 .s_itm05 {
+    background: url(../img06/main_slide_img02-05.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box02 .s_itm06 {
+    background: url(../img06/main_slide_img02-06.jpg) no-repeat center center/cover;
+}
+
+
+
+/* 3번 슬라이드 영역 */
+.slideSection .s_box03 .s_itm01 {
+    background: url(../img06/main_slide_img03-01.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box03 .s_itm02 {
+    background: url(../img06/main_slide_img03-02.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box03 .s_itm03 {
+    background: url(../img06/main_slide_img03-03.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box03 .s_itm04 {
+    background: url(../img06/main_slide_img03-04.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box03 .s_itm05 {
+    background: url(../img06/main_slide_img03-05.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box03 .s_itm06 {
+    background: url(../img06/main_slide_img03-06.jpg) no-repeat center center/cover;
+}
+
+
+
+/* 4번 슬라이드 영역 */
+.slideSection .s_box04 .s_itm01 {
+    background: url(../img06/main_slide_img04-01.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box04 .s_itm02 {
+    background: url(../img06/main_slide_img04-02.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box04 .s_itm03 {
+    background: url(../img06/main_slide_img04-03.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box04 .s_itm04 {
+    background: url(../img06/main_slide_img04-04.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box04 .s_itm05 {
+    background: url(../img06/main_slide_img04-05.jpg) no-repeat center center/cover;
+}
+
+.slideSection .s_box04 .s_itm06 {
+    background: url(../img06/main_slide_img04-06.jpg) no-repeat center center/cover;
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+
+.footer {
+    padding: 40px 0;
+    background: rgb(39, 37, 37);
+    font-size: 14px;
+}
+
+.footer .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .inner .link_icon {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.footer .inner .link_icon i {
+    padding: 0 5px;
+    font-size: 30px;
+}
+
+.footer .inner .txt_box {
+    text-align: center;
+}
+
+.footer .inner .txt_box p {
+    line-height: 24px;
+    margin: 0 0 5px 0;
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 40px 0;
+        background: rgb(39, 37, 37);
+        font-size: 2vw;
+    }
+
+    .footer .inner {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .footer .inner .link_icon {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+
+    .footer .inner .link_icon i {
+        padding: 0 5px;
+        font-size: 4vw;
+    }
+
+    .footer .inner .txt_box {
+        text-align: center;
+    }
+
+    .footer .inner .txt_box p {
+        line-height: 24px;
+        margin: 0 0 5px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* talk : bot fixed icon */
+
+
+
+.talk {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+
+.talk img {
+    z-index: 1999;
+}
