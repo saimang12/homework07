@@ -20,26 +20,6 @@ $(function () {
         fade: true,
     });
 
-    // subVisual slide arrows 컨트롤 
-    $('.subVisual .arrows i:first-child').on('click', function () {
-        $('.subVisual .slide_box').slick('slickPrev')
-    });
-    $('.subVisual .arrows i:last-child').on('click', function () {
-        $('.subVisual .slide_box').slick('slickNext')
-    });
-
-    // subVisual slide dots 컨트롤 
-    $('.subVisual .slide_dots li').on('click', function () {
-        $(this).addClass('on').siblings().removeClass('on')
-        var idx = $(this).index()
-        $('.slide_box').slick('slickGoTo', idx)
-    });
-
-    $('.subVisual .slide_box').on('init afterChange', function (e, s, c) {
-        $('.subVisual .slide_dots li').removeClass('on');
-        $('.subVisual .slide_dots li').eq(c ? c : 0).addClass('on');
-    });
-
 
 
 
