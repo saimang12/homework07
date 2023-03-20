@@ -1,9 +1,38 @@
 $(function () {
 
+
+    $('.h_icon a').on('click', function () {
+        $('.header .gnb').toggleClass('on');
+        if ($('.header .gnb').hasClass('on')) {
+            $('.cover').addClass('on')
+        } else {
+            $('.cover').removeClass('on')
+        }
+    });
+
+    $('.cover,.header,.gnb').on('wheel', function (e) {
+        if ($('.gnb').hasClass('on')) {
+            e.preventDefault();
+        };
+    });
+
+
+
+
+
+
     const MainSlideOption = {
         arrows: false,
         fade: true,
-    }
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    autoplay: true,
+                }
+            }
+        ]
+    };
 
     $('.mainSlide').slick(MainSlideOption);
 
