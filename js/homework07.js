@@ -1,6 +1,15 @@
 $(function () {
 
 
+
+
+
+
+
+
+
+
+
     $('.h_icon a').on('click', function () {
         $('.header .gnb').toggleClass('on');
         if ($('.header .gnb').hasClass('on')) {
@@ -30,6 +39,7 @@ $(function () {
                 settings: {
                     autoplay: true,
                 }
+
             }
         ]
     };
@@ -50,6 +60,15 @@ $(function () {
         // centerPadding: '300px',
         arrows: false,
         slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    fade: true,
+                }
+            },
+        ]
     };
 
     $('.Dress').slick(DressOption);
@@ -69,6 +88,15 @@ $(function () {
         // centerPadding: '300px',
         arrows: false,
         slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    fade: true,
+                }
+            },
+        ]
     };
 
     $('.Suit').slick(SuitOption);

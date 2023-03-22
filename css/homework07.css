@@ -4,6 +4,8 @@
     background-color: #3b404c;
 }
 
+
+
 .header {
     line-height: 100px;
     border-bottom: 1px solid #8b8b8b;
@@ -56,7 +58,7 @@
 @media (max-width:768px) {
     .Wrap {
         color: #ddd;
-        min-width: auto;
+        min-width: 300px;
         background: #3b404c;
     }
 
@@ -407,6 +409,53 @@
     font-weight: 300;
 }
 
+
+@media (max-width:768px) {
+
+    .mainContent .inner {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .mainContent ul {
+        flex-direction: column;
+    }
+
+    .mainContent .content figure {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .mainContent .content figure img {
+        min-height: auto;
+    }
+
+    .mainContent .content .itm02 img {
+        margin: 0 0 0 0;
+    }
+
+    .mainContent .content .itm03 img {
+        margin: 0 0 0 0;
+    }
+
+    .mainContent .content .desc {
+        padding: 30px;
+        background: #232936;
+        text-align: center;
+    }
+
+
+    .mainContent .content .desc p {
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
 .mainMovie {
     padding: 100px 0;
     background: #252c2c;
@@ -426,6 +475,41 @@
     width: 1200px;
     margin: 0 auto;
 }
+
+/* .mainMovie .videoWrap {
+    position: relative;
+} */
+
+/* .mainMovie .video_cover {
+    content: "";
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 60px;
+    background: #000;
+} */
+
+
+@media (max-width:768px) {
+    .mainMovie {}
+
+    .mainMovie .inner {
+        width: auto;
+        padding: 0 15px;
+    }
+
+    .mainMovie iframe {
+        height: 100vw;
+    }
+}
+
+
+
+
+
+
+
+
 
 .mainPhoto {
     padding: 100px 0;
@@ -486,7 +570,7 @@
 }
 
 .mainPhoto .itm figure img {
-    height: 250px;
+    height: 270px;
     width: 100%;
 }
 
@@ -528,6 +612,99 @@
     transform: translate(-50%, -50%);
     margin: 0 0 0 650px;
 }
+
+
+
+
+
+
+
+
+
+
+@media (max-width:768px) {
+
+
+
+    .mainPhoto .inner {
+        width: auto;
+        padding: 0 15px;
+    }
+
+
+    .mainPhoto .Dress,
+    .mainPhoto .Suit {
+        margin: 0 0;
+        overflow: hidden;
+    }
+
+
+    .mainPhoto .sub_tit p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .mainPhoto .itm {
+        margin: 0 0;
+    }
+
+    .mainPhoto .itm figure {
+        overflow: hidden;
+    }
+
+    .mainPhoto .itm figure img {
+        height: 65vw;
+        width: 100%;
+    }
+
+
+
+    .mainPhoto .suit_slide_wrap,
+    .mainPhoto .dress_slide_wrap {
+        position: relative;
+    }
+
+    .mainPhoto .suit_arrows button,
+    .mainPhoto .dress_arrows button {
+        font-size: 30px;
+        color: #ddd;
+    }
+
+
+    .mainPhoto .suit_arrows .left,
+    .mainPhoto .dress_arrows .left {
+        position: absolute;
+        inset: 50% auto auto 0;
+        transform: translate(0, -50%);
+        margin: 0 0 0 0;
+        text-shadow: 0 0 3px #000;
+    }
+
+    .mainPhoto .suit_arrows .right,
+    .mainPhoto .dress_arrows .right {
+        position: absolute;
+        inset: 50% 0 auto auto;
+        transform: translate(0, -50%);
+        margin: 0 0 0 0;
+        text-shadow: 0 0 3px #000;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     padding: 40px 0 60px 0;
@@ -571,4 +748,13 @@
 
 .footer .desc address {
     margin: 0 0 10px 0;
+}
+
+@media (max-width:768px) {
+
+    .footer .inner {
+        width: auto;
+    }
+
+
 }
