@@ -56,8 +56,6 @@ $(function () {
 
 
     const DressOption = {
-        // centerMode: true,
-        // centerPadding: '300px',
         arrows: false,
         slidesToShow: 3,
         responsive: [
@@ -84,8 +82,6 @@ $(function () {
 
 
     const SuitOption = {
-        // centerMode: true,
-        // centerPadding: '300px',
         arrows: false,
         slidesToShow: 3,
         responsive: [
@@ -111,6 +107,19 @@ $(function () {
 
 
 
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 500) {
+            $('.toTop').addClass('on');
+        } else {
+            $('.toTop').removeClass('on');
+        };
+    });
+
+    $('.toTop').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    });
 
 
 

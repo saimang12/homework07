@@ -758,3 +758,23 @@
 
 
 }
+
+.toTop {
+    position: fixed;
+    inset: auto 50px 50px auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.toTop a {
+    display: block;
+    padding: 10px;
+    background: #0f0a36;
+    font-size: 25px;
+}
+
+.toTop.on {
+    opacity: 1;
+    visibility: visible;
+}
